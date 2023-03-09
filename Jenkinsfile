@@ -4,7 +4,11 @@ pipeline {
 	    stage("Mireille Dib - Build Docker Image"){
 	        steps{   
 		    sh "echo executing the stage Build Docker Image"
-		    
+		    def myimage = docker.build(
+          "myimage",
+          ".",
+          "--build-arg v1.0"
+        )
 		}
 	    }
 	    stage("Mireille Dib - Login to Dockerhub"){
