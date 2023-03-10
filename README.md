@@ -4,6 +4,8 @@ Project for DevOps 2. Includes a trigger to a Jenkins CI/CD pipeline for every p
 
 Project components:
 
+- github project
+
 - python file
 
 - CI/CD Pipeline
@@ -13,5 +15,3 @@ Project components:
 - Jenkinsfile
 
 - Dockerfile
-
-- push and trigger

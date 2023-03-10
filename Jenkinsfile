@@ -18,7 +18,7 @@ pipeline {
       stage("Mireille Dib - Push Image to Dockerhub"){
 		steps {
 		    sh "echo executing the stage Push Image to Dockerhub"
-        sh "docker image tag mdib:devops2 ${username}/mireilledib:devops2"
+        sh "docker image tag mireilledib:devops2 ${username}/mireilledib:devops2"
         sh "docker image push ${username}/mireilledib:devops2"
 		}
 	    }
