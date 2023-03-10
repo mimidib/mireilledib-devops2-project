@@ -3,9 +3,8 @@ pipeline {
 	stages {
 	    stage("Mireille Dib - Build Docker Image"){
 	        steps{   
-            sh "echo ${username}, ${password}"
 		        sh "echo executing the stage Build Docker Image"
-            sh "docker image build -t mdib:devops2 ."
+            sh "docker image build -t mireiledib:devops2 ."
 		}
 	    }
 	    stage("Mireille Dib - Login to Dockerhub"){
@@ -19,8 +18,8 @@ pipeline {
       stage("Mireille Dib - Push Image to Dockerhub"){
 		steps {
 		    sh "echo executing the stage Push Image to Dockerhub"
-        sh "docker image tag mdib:devops2 ${username}/mdib:devops2"
-        sh "docker image push ${username}/mdib:devops2"
+        sh "docker image tag mdib:devops2 ${username}/mireilledib:devops2"
+        sh "docker image push ${username}/mireilledib:devops2"
 		}
 	    }
 	}
