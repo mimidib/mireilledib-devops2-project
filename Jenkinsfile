@@ -4,7 +4,7 @@ pipeline {
 	    stage("Mireille Dib - Build Docker Image"){
 	        steps{   
 		        sh "echo executing the stage Build Docker Image"
-            sh "docker image build -t mireiledib:devops2 ."
+            sh "docker image build -t mireilledib:devops2 ."
 		}
 	    }
 	    stage("Mireille Dib - Login to Dockerhub"){
